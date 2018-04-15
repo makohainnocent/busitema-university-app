@@ -1,7 +1,7 @@
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.helloworld" version="1.0.0">
   <name>syaule powerpoint clicker</name>
-  <description>This app is used to control power point from your phone.you need to download both the desktop version and the mobile version.run the desktop version first then run the mobile version.</description>
-  <author href="http://phonegap.com" email="vantagepoint2019@gmail.com">makoha innocent</author>
+  <description>This app connects students,teachers and alumnai of busitema university</description>
+  <author href="http://phonegap.com" email="support@phonegap.com">PhoneGap Team</author>
   <content src="index.html"/>
   <preference name="DisallowOverscroll" value="true"/>
   <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.2.4"/>

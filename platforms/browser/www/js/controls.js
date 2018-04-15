@@ -11,39 +11,26 @@ function gotoapp(){
 
 function deviceready(){
 				document.getElementById('status').innerHTML="ready";
-				//alert("device ready");
-				//alert(device.version);
-				//navigator.notification.beep(2);
-				//alert(navigator.geolocation.getCurrentPosition());
-				//alert(cordova.file);
-				//alert(device.manufacturer);
-				//navigator.vibrate(3000);
-				//navigator.notification.alert("hello",battery,"alert","ok");
-				//window.addEventListener("batterystatus",battery, false);
+				loadapp();
 				}
-function loadapp(){status=document.getElementById('status').innerHTML
+function loadapp(){var status="ready";
 					if (status=="ready"){
-						ip=document.getElementById('ip').value;
-						//alert(ip);
-						//document.cookie=ip;
 						var iab = cordova.InAppBrowser;
-						inAppBrowserRef=iab.open(ip, 'random_string', 'location=no,hidden=yes');
+						inAppBrowserRef=iab.open("http://makoha.ihostfull.com/elgg2/activity", 'random_string', 'location=no,hidden=yes');
 						inAppBrowserRef.addEventListener('loadstart',starthh);
 						inAppBrowserRef.addEventListener('loadstop', finishedhh);
 						inAppBrowserRef.addEventListener('loaderror', errorhh);
 						}else{return(0);}
 					}
-function  starthh(){document.getElementById('app').style.display="none";
-					document.getElementById('login').style.display="none";
-					document.getElementById('loader').style.display="block";
+function  starthh(){//inAppBrowserRef.executeScript({});
 		  }
 
 function  errorhh(){inAppBrowserRef.close();
-					document.getElementById('app').style.display="none";
-					document.getElementById('login').style.display="block";
-					document.getElementById('loader').style.display="none";
+					//document.getElementById('app').style.display="none";
+					//document.getElementById('login').style.display="block";
+					document.getElementById('loader').style.display="block";
 					navigator.notification.beep(1);
-					navigator.notification.alert("The system did not detect any signals from remote computer...app design by makoha innocent tel +0781983636",callback,"error!","ok");
+					navigator.notification.alert("Dear user busitema connect needs internet to load data,please review your network settings and try again.app design by makoha innocent tel +0781983636",callback,"busitema connect cannot load data!","try again");
 
 
 
@@ -51,5 +38,5 @@ function  errorhh(){inAppBrowserRef.close();
 
 function  finishedhh(){inAppBrowserRef.show();
 		  }
-function callback(){//hello;
+function callback(){loadapp();
 					}

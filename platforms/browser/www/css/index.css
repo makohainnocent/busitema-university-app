@@ -2,7 +2,7 @@ button{margin-top:20px;border-style:solid;border-color:purple;background-color:p
 	  }
 body{margin:4%;max-width:85%;background-image:url(../img/cat.jpg);background-repeat:no-repeat;
 	}
-body{background:url(../img/bg.jpg);
+body{background-color:#000000;}
 	}
 button:hover{background-color:green;border-color:green;
 	}
@@ -24,7 +24,8 @@ ol{list-style-image:url(../img/li_st1.png);
 .login-button:hover{background-color:#000000;border-color:#000000;
 	}
 li:hover{text-decoration:underline;}
-#loader{display:none;
+#login{display:none;
 	}
 #status{display:none;
 		}
+img{margin-top:50%;}

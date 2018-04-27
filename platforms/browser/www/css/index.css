@@ -1,8 +1,6 @@
 button{margin-top:20px;border-style:solid;border-color:purple;background-color:purple;border-radius:50px;color:#ffffff;height:100px;width:100px;
 	  }
-body{margin:4%;max-width:85%;background-image:url(../img/cat.jpg);background-repeat:no-repeat;
-	}
-body{background-color:#000000;}
+body{background:url(../img/bg.gif);
 	}
 button:hover{background-color:green;border-color:green;
 	}
@@ -28,4 +26,4 @@ li:hover{text-decoration:underline;}
 	}
 #status{display:none;
 		}
-img{margin-top:50%;}
+#loader{margin-top:45%;}
